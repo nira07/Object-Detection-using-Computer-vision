@@ -1,31 +1,41 @@
-3️⃣ Objectives
-Implement Lucas-Kanade Tracker (Translation & Affine Transformation).
+This project implements and compares two classical object tracking algorithms—Lucas-Kanade Tracker and Matthews-Baker Inverse Compositional Tracker—on various video sequences. The goal is to analyze tracking accuracy, efficiency, and robustness under challenging conditions like occlusion and lighting changes.
 
-Implement Matthews-Baker Inverse Compositional Tracker for efficiency.
+🎯 Objectives
 
-Compare the performance of Forward Additive vs. Inverse Compositional Methods.
 
-Test and analyze results on video sequences (car tracking, landing sequence, etc.).
+✅ Implement Lucas-Kanade Tracker using both Translation and Affine Transformation models.
 
-4️⃣ Methodology
-Use image pyramids and interpolation for handling large movements.
+✅ Develop the Matthews-Baker Inverse Compositional Tracker for enhanced computational efficiency.
 
-Compute image gradients and Jacobians for warp estimation.
+✅ Compare Forward Additive and Inverse Compositional methods in terms of performance.
 
-Solve for motion parameters using least squares optimization.
+✅ Test and visualize results on real-world video sequences (e.g., car tracking, landing sequences).
 
-Implement a termination condition to optimize computation.
+⚙️ Methodology
 
-5️⃣ Tools & Technologies
+
+🧱 Use image pyramids and interpolation to handle large object displacements.
+
+🧮 Compute image gradients and Jacobians for warp parameter estimation.
+
+➗ Solve for motion parameters via least squares optimization.
+
+🛑 Implement a termination condition based on error thresholds to optimize computation.
+
+🧰 Tools & Technologies
+
+
 Programming Language: Python
 
 Libraries: OpenCV, NumPy, SciPy, Matplotlib
 
-Testing Framework: Provided video datasets & tracking scripts
+Testing Framework: Provided video datasets and tracking scripts
 
-6️⃣ Expected Outcome
-A working object tracking system that can detect and follow an object in a video.
+🚀 Expected Outcome
 
-Comparison of tracking accuracy and computational efficiency between Lucas-Kanade and Matthews-Baker methods.
 
-Analyzed tracking failures under challenging conditions (e.g., occlusion, illumination changes).
+✅ A robust tracking system that detects and follows a target object across frames.
+
+📊 Comparative analysis of tracking accuracy and efficiency between Lucas-Kanade and Matthews-Baker methods.
+
+🧪 Insight into tracker limitations under occlusion, illumination changes, and motion blur.
